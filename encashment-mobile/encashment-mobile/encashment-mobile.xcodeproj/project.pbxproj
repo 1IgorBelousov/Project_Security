@@ -1,0 +1,762 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		00407286213C638300FDBF52 /* AtmInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00407285213C638300FDBF52 /* AtmInfoViewController.swift */; };
+		00407288213C638D00FDBF52 /* AtmInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00407287213C638D00FDBF52 /* AtmInfoView.swift */; };
+		007A449E2138AE4D00128E38 /* ArNavigationErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 007A449D2138AE4D00128E38 /* ArNavigationErrorView.swift */; };
+		00ABCC402135F71900B3CE52 /* AppManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00ABCC3F2135F71900B3CE52 /* AppManager.swift */; };
+		00ABCC422135F9D500B3CE52 /* AppModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00ABCC412135F9D500B3CE52 /* AppModel.swift */; };
+		00AE5877213F1234003AEE99 /* HttpRequestHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00AE5876213F1234003AEE99 /* HttpRequestHelper.swift */; };
+		00B098CD2135E17A00EFDD33 /* ArNavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00B098CC2135E17A00EFDD33 /* ArNavigationView.swift */; };
+		00B098CF2135E55500EFDD33 /* ArNavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00B098CE2135E55500EFDD33 /* ArNavigationViewController.swift */; };
+		00C960E7211997A700D57E7D /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C960E6211997A700D57E7D /* LoginViewController.swift */; };
+		00C960E92119A29900D57E7D /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C960E82119A29900D57E7D /* LoginView.swift */; };
+		00C960EC2119A3A300D57E7D /* ConstraintsSetter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C960EB2119A3A300D57E7D /* ConstraintsSetter.swift */; };
+		00CE60F5211D97CE00D24F61 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00CE60F4211D97CE00D24F61 /* MapKit.framework */; };
+		00CEEBEA213B202500BE1B40 /* UiHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00CEEBE9213B202500BE1B40 /* UiHelper.swift */; };
+		00D82E23212DE67D003C5B08 /* AtmDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00D82E22212DE67D003C5B08 /* AtmDataModel.swift */; };
+		00D82E25212DE686003C5B08 /* RouteModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00D82E24212DE686003C5B08 /* RouteModel.swift */; };
+		00D94FD621204197001A1FB0 /* WAtmRouteLoader.mm in Sources */ = {isa = PBXBuildFile; fileRef = 00D94FD521204197001A1FB0 /* WAtmRouteLoader.mm */; };
+		00D94FD921204757001A1FB0 /* WAtmDataProvider.mm in Sources */ = {isa = PBXBuildFile; fileRef = 00D94FD821204757001A1FB0 /* WAtmDataProvider.mm */; };
+		00D94FEB2120554C001A1FB0 /* file_addresses_provider.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 00D94FDB2120554B001A1FB0 /* file_addresses_provider.cpp */; };
+		00D94FEC2120554C001A1FB0 /* random_cash_level_provider.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 00D94FDD2120554B001A1FB0 /* random_cash_level_provider.cpp */; };
+		00D94FEE2120554C001A1FB0 /* greedy_route_builder.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 00D94FE22120554B001A1FB0 /* greedy_route_builder.cpp */; };
+		00ECE3CB2129782C00672D9B /* DirectionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00ECE3CA2129782C00672D9B /* DirectionsView.swift */; };
+		00EED8B0211B98FF00AE5BD0 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00EED8AF211B98FF00AE5BD0 /* MainViewController.swift */; };
+		00F71B2F210E10C60022B7E8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00F71B2E210E10C60022B7E8 /* AppDelegate.swift */; };
+		00F71B36210E10C70022B7E8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 00F71B35210E10C70022B7E8 /* Assets.xcassets */; };
+		00F71B39210E10C70022B7E8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00F71B37210E10C70022B7E8 /* LaunchScreen.storyboard */; };
+		00F71B44210E10C70022B7E8 /* encashment_mobileTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00F71B43210E10C70022B7E8 /* encashment_mobileTests.swift */; };
+		00F71B4F210E10C70022B7E8 /* encashment_mobileUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00F71B4E210E10C70022B7E8 /* encashment_mobileUITests.swift */; };
+		00F8EF5821183D6C004AE606 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00F8EF5721183D6C004AE606 /* MainView.swift */; };
+		00F94660213350B20002F682 /* AppConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00F9465F213350B20002F682 /* AppConstants.swift */; };
+		00FBE9802130959D003D6A17 /* WaitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00FBE97F2130959D003D6A17 /* WaitViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		00F71B40210E10C70022B7E8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 00F71B23210E10C60022B7E8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 00F71B2A210E10C60022B7E8;
+			remoteInfo = "encashment-mobile";
+		};
+		00F71B4B210E10C70022B7E8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 00F71B23210E10C60022B7E8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 00F71B2A210E10C60022B7E8;
+			remoteInfo = "encashment-mobile";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		00407285213C638300FDBF52 /* AtmInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AtmInfoViewController.swift; sourceTree = "<group>"; };
+		00407287213C638D00FDBF52 /* AtmInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AtmInfoView.swift; sourceTree = "<group>"; };
+		007A449D2138AE4D00128E38 /* ArNavigationErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArNavigationErrorView.swift; sourceTree = "<group>"; };
+		00ABCC3F2135F71900B3CE52 /* AppManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppManager.swift; sourceTree = "<group>"; };
+		00ABCC412135F9D500B3CE52 /* AppModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppModel.swift; sourceTree = "<group>"; };
+		00AE5876213F1234003AEE99 /* HttpRequestHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpRequestHelper.swift; sourceTree = "<group>"; };
+		00B098CC2135E17A00EFDD33 /* ArNavigationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArNavigationView.swift; sourceTree = "<group>"; };
+		00B098CE2135E55500EFDD33 /* ArNavigationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArNavigationViewController.swift; sourceTree = "<group>"; };
+		00C960E6211997A700D57E7D /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		00C960E82119A29900D57E7D /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		00C960EB2119A3A300D57E7D /* ConstraintsSetter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstraintsSetter.swift; sourceTree = "<group>"; };
+		00CE60F4211D97CE00D24F61 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		00CEEBE9213B202500BE1B40 /* UiHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UiHelper.swift; sourceTree = "<group>"; };
+		00D82E22212DE67D003C5B08 /* AtmDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AtmDataModel.swift; sourceTree = "<group>"; };
+		00D82E24212DE686003C5B08 /* RouteModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteModel.swift; sourceTree = "<group>"; };
+		00D94FD32120417F001A1FB0 /* WAtmRouteLoader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WAtmRouteLoader.h; sourceTree = "<group>"; };
+		00D94FD421204197001A1FB0 /* encashment-mobile-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "encashment-mobile-Bridging-Header.h"; sourceTree = "<group>"; };
+		00D94FD521204197001A1FB0 /* WAtmRouteLoader.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = WAtmRouteLoader.mm; sourceTree = "<group>"; };
+		00D94FD721204747001A1FB0 /* WAtmDataProvider.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WAtmDataProvider.h; sourceTree = "<group>"; };
+		00D94FD821204757001A1FB0 /* WAtmDataProvider.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = WAtmDataProvider.mm; sourceTree = "<group>"; };
+		00D94FDB2120554B001A1FB0 /* file_addresses_provider.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = file_addresses_provider.cpp; sourceTree = "<group>"; };
+		00D94FDD2120554B001A1FB0 /* random_cash_level_provider.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = random_cash_level_provider.cpp; sourceTree = "<group>"; };
+		00D94FDF2120554B001A1FB0 /* greedy_route_builder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = greedy_route_builder.h; sourceTree = "<group>"; };
+		00D94FE02120554B001A1FB0 /* file_addresses_provider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = file_addresses_provider.h; sourceTree = "<group>"; };
+		00D94FE22120554B001A1FB0 /* greedy_route_builder.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = greedy_route_builder.cpp; sourceTree = "<group>"; };
+		00D94FE32120554B001A1FB0 /* random_cash_level_provider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = random_cash_level_provider.h; sourceTree = "<group>"; };
+		00D94FE42120554B001A1FB0 /* cash_level_provider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cash_level_provider.h; sourceTree = "<group>"; };
+		00D94FE62120554B001A1FB0 /* route_builder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = route_builder.h; sourceTree = "<group>"; };
+		00D94FE72120554B001A1FB0 /* point.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = point.h; sourceTree = "<group>"; };
+		00D94FEA2120554B001A1FB0 /* addresses_provider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = addresses_provider.h; sourceTree = "<group>"; };
+		00ECE3CA2129782C00672D9B /* DirectionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DirectionsView.swift; sourceTree = "<group>"; };
+		00EED8AF211B98FF00AE5BD0 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		00F71B2B210E10C60022B7E8 /* encashment-mobile.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "encashment-mobile.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		00F71B2E210E10C60022B7E8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		00F71B35210E10C70022B7E8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		00F71B38210E10C70022B7E8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		00F71B3A210E10C70022B7E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		00F71B3F210E10C70022B7E8 /* encashment-mobileTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "encashment-mobileTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		00F71B43210E10C70022B7E8 /* encashment_mobileTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = encashment_mobileTests.swift; sourceTree = "<group>"; };
+		00F71B45210E10C70022B7E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		00F71B4A210E10C70022B7E8 /* encashment-mobileUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "encashment-mobileUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		00F71B4E210E10C70022B7E8 /* encashment_mobileUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = encashment_mobileUITests.swift; sourceTree = "<group>"; };
+		00F71B50210E10C70022B7E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		00F8EF5721183D6C004AE606 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		00F9465F213350B20002F682 /* AppConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConstants.swift; sourceTree = "<group>"; };
+		00FBE97F2130959D003D6A17 /* WaitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaitViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		00F71B28210E10C60022B7E8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00CE60F5211D97CE00D24F61 /* MapKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		00F71B3C210E10C70022B7E8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		00F71B47210E10C70022B7E8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0051736B2110F3B70063B664 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				00F8EF5721183D6C004AE606 /* MainView.swift */,
+				00C960E82119A29900D57E7D /* LoginView.swift */,
+				00ECE3CA2129782C00672D9B /* DirectionsView.swift */,
+				00B098CC2135E17A00EFDD33 /* ArNavigationView.swift */,
+				007A449D2138AE4D00128E38 /* ArNavigationErrorView.swift */,
+				00407287213C638D00FDBF52 /* AtmInfoView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		0051736C2110F3D40063B664 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				00D82E22212DE67D003C5B08 /* AtmDataModel.swift */,
+				00D82E24212DE686003C5B08 /* RouteModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		00C960E52119979100D57E7D /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				00C960E6211997A700D57E7D /* LoginViewController.swift */,
+				00EED8AF211B98FF00AE5BD0 /* MainViewController.swift */,
+				00FBE97F2130959D003D6A17 /* WaitViewController.swift */,
+				00B098CE2135E55500EFDD33 /* ArNavigationViewController.swift */,
+				00407285213C638300FDBF52 /* AtmInfoViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		00C960EA2119A38600D57E7D /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				00C960EB2119A3A300D57E7D /* ConstraintsSetter.swift */,
+				00F9465F213350B20002F682 /* AppConstants.swift */,
+				00CEEBE9213B202500BE1B40 /* UiHelper.swift */,
+				00AE5876213F1234003AEE99 /* HttpRequestHelper.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		00CE60F3211D97CE00D24F61 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				00CE60F4211D97CE00D24F61 /* MapKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		00D94FD22120410F001A1FB0 /* ObjC */ = {
+			isa = PBXGroup;
+			children = (
+				00D94FD32120417F001A1FB0 /* WAtmRouteLoader.h */,
+				00D94FD521204197001A1FB0 /* WAtmRouteLoader.mm */,
+				00D94FD421204197001A1FB0 /* encashment-mobile-Bridging-Header.h */,
+				00D94FD721204747001A1FB0 /* WAtmDataProvider.h */,
+				00D94FD821204757001A1FB0 /* WAtmDataProvider.mm */,
+			);
+			path = ObjC;
+			sourceTree = "<group>";
+		};
+		00D94FDA21204DD8001A1FB0 /* Cpp */ = {
+			isa = PBXGroup;
+			children = (
+				00D94FEA2120554B001A1FB0 /* addresses_provider.h */,
+				00D94FE42120554B001A1FB0 /* cash_level_provider.h */,
+				00D94FDB2120554B001A1FB0 /* file_addresses_provider.cpp */,
+				00D94FE02120554B001A1FB0 /* file_addresses_provider.h */,
+				00D94FE22120554B001A1FB0 /* greedy_route_builder.cpp */,
+				00D94FDF2120554B001A1FB0 /* greedy_route_builder.h */,
+				00D94FE72120554B001A1FB0 /* point.h */,
+				00D94FDD2120554B001A1FB0 /* random_cash_level_provider.cpp */,
+				00D94FE32120554B001A1FB0 /* random_cash_level_provider.h */,
+				00D94FE62120554B001A1FB0 /* route_builder.h */,
+			);
+			path = Cpp;
+			sourceTree = "<group>";
+		};
+		00F71B22210E10C60022B7E8 = {
+			isa = PBXGroup;
+			children = (
+				00F71B2D210E10C60022B7E8 /* encashment-mobile */,
+				00F71B42210E10C70022B7E8 /* encashment-mobileTests */,
+				00F71B4D210E10C70022B7E8 /* encashment-mobileUITests */,
+				00F71B2C210E10C60022B7E8 /* Products */,
+				00CE60F3211D97CE00D24F61 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		00F71B2C210E10C60022B7E8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				00F71B2B210E10C60022B7E8 /* encashment-mobile.app */,
+				00F71B3F210E10C70022B7E8 /* encashment-mobileTests.xctest */,
+				00F71B4A210E10C70022B7E8 /* encashment-mobileUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		00F71B2D210E10C60022B7E8 /* encashment-mobile */ = {
+			isa = PBXGroup;
+			children = (
+				00D94FDA21204DD8001A1FB0 /* Cpp */,
+				00D94FD22120410F001A1FB0 /* ObjC */,
+				00C960EA2119A38600D57E7D /* Utils */,
+				00C960E52119979100D57E7D /* ViewControllers */,
+				0051736C2110F3D40063B664 /* Models */,
+				0051736B2110F3B70063B664 /* Views */,
+				00F71B2E210E10C60022B7E8 /* AppDelegate.swift */,
+				00ABCC3F2135F71900B3CE52 /* AppManager.swift */,
+				00ABCC412135F9D500B3CE52 /* AppModel.swift */,
+				00F71B35210E10C70022B7E8 /* Assets.xcassets */,
+				00F71B37210E10C70022B7E8 /* LaunchScreen.storyboard */,
+				00F71B3A210E10C70022B7E8 /* Info.plist */,
+			);
+			path = "encashment-mobile";
+			sourceTree = "<group>";
+		};
+		00F71B42210E10C70022B7E8 /* encashment-mobileTests */ = {
+			isa = PBXGroup;
+			children = (
+				00F71B43210E10C70022B7E8 /* encashment_mobileTests.swift */,
+				00F71B45210E10C70022B7E8 /* Info.plist */,
+			);
+			path = "encashment-mobileTests";
+			sourceTree = "<group>";
+		};
+		00F71B4D210E10C70022B7E8 /* encashment-mobileUITests */ = {
+			isa = PBXGroup;
+			children = (
+				00F71B4E210E10C70022B7E8 /* encashment_mobileUITests.swift */,
+				00F71B50210E10C70022B7E8 /* Info.plist */,
+			);
+			path = "encashment-mobileUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		00F71B2A210E10C60022B7E8 /* encashment-mobile */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 00F71B53210E10C70022B7E8 /* Build configuration list for PBXNativeTarget "encashment-mobile" */;
+			buildPhases = (
+				00F71B27210E10C60022B7E8 /* Sources */,
+				00F71B28210E10C60022B7E8 /* Frameworks */,
+				00F71B29210E10C60022B7E8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "encashment-mobile";
+			productName = "encashment-mobile";
+			productReference = 00F71B2B210E10C60022B7E8 /* encashment-mobile.app */;
+			productType = "com.apple.product-type.application";
+		};
+		00F71B3E210E10C70022B7E8 /* encashment-mobileTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 00F71B56210E10C70022B7E8 /* Build configuration list for PBXNativeTarget "encashment-mobileTests" */;
+			buildPhases = (
+				00F71B3B210E10C70022B7E8 /* Sources */,
+				00F71B3C210E10C70022B7E8 /* Frameworks */,
+				00F71B3D210E10C70022B7E8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				00F71B41210E10C70022B7E8 /* PBXTargetDependency */,
+			);
+			name = "encashment-mobileTests";
+			productName = "encashment-mobileTests";
+			productReference = 00F71B3F210E10C70022B7E8 /* encashment-mobileTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		00F71B49210E10C70022B7E8 /* encashment-mobileUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 00F71B59210E10C70022B7E8 /* Build configuration list for PBXNativeTarget "encashment-mobileUITests" */;
+			buildPhases = (
+				00F71B46210E10C70022B7E8 /* Sources */,
+				00F71B47210E10C70022B7E8 /* Frameworks */,
+				00F71B48210E10C70022B7E8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				00F71B4C210E10C70022B7E8 /* PBXTargetDependency */,
+			);
+			name = "encashment-mobileUITests";
+			productName = "encashment-mobileUITests";
+			productReference = 00F71B4A210E10C70022B7E8 /* encashment-mobileUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		00F71B23210E10C60022B7E8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = "Magin Yaroslav";
+				TargetAttributes = {
+					00F71B2A210E10C60022B7E8 = {
+						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 0940;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 1;
+							};
+						};
+					};
+					00F71B3E210E10C70022B7E8 = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = 00F71B2A210E10C60022B7E8;
+					};
+					00F71B49210E10C70022B7E8 = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = 00F71B2A210E10C60022B7E8;
+					};
+				};
+			};
+			buildConfigurationList = 00F71B26210E10C60022B7E8 /* Build configuration list for PBXProject "encashment-mobile" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 00F71B22210E10C60022B7E8;
+			productRefGroup = 00F71B2C210E10C60022B7E8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				00F71B2A210E10C60022B7E8 /* encashment-mobile */,
+				00F71B3E210E10C70022B7E8 /* encashment-mobileTests */,
+				00F71B49210E10C70022B7E8 /* encashment-mobileUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		00F71B29210E10C60022B7E8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00F71B39210E10C70022B7E8 /* LaunchScreen.storyboard in Resources */,
+				00F71B36210E10C70022B7E8 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		00F71B3D210E10C70022B7E8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		00F71B48210E10C70022B7E8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		00F71B27210E10C60022B7E8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00EED8B0211B98FF00AE5BD0 /* MainViewController.swift in Sources */,
+				00F94660213350B20002F682 /* AppConstants.swift in Sources */,
+				00C960E7211997A700D57E7D /* LoginViewController.swift in Sources */,
+				00ECE3CB2129782C00672D9B /* DirectionsView.swift in Sources */,
+				00D82E25212DE686003C5B08 /* RouteModel.swift in Sources */,
+				00C960EC2119A3A300D57E7D /* ConstraintsSetter.swift in Sources */,
+				007A449E2138AE4D00128E38 /* ArNavigationErrorView.swift in Sources */,
+				00D94FEB2120554C001A1FB0 /* file_addresses_provider.cpp in Sources */,
+				00ABCC422135F9D500B3CE52 /* AppModel.swift in Sources */,
+				00D94FEE2120554C001A1FB0 /* greedy_route_builder.cpp in Sources */,
+				00FBE9802130959D003D6A17 /* WaitViewController.swift in Sources */,
+				00D94FD621204197001A1FB0 /* WAtmRouteLoader.mm in Sources */,
+				00D94FD921204757001A1FB0 /* WAtmDataProvider.mm in Sources */,
+				00ABCC402135F71900B3CE52 /* AppManager.swift in Sources */,
+				00D82E23212DE67D003C5B08 /* AtmDataModel.swift in Sources */,
+				00CEEBEA213B202500BE1B40 /* UiHelper.swift in Sources */,
+				00F8EF5821183D6C004AE606 /* MainView.swift in Sources */,
+				00D94FEC2120554C001A1FB0 /* random_cash_level_provider.cpp in Sources */,
+				00AE5877213F1234003AEE99 /* HttpRequestHelper.swift in Sources */,
+				00407286213C638300FDBF52 /* AtmInfoViewController.swift in Sources */,
+				00B098CD2135E17A00EFDD33 /* ArNavigationView.swift in Sources */,
+				00407288213C638D00FDBF52 /* AtmInfoView.swift in Sources */,
+				00B098CF2135E55500EFDD33 /* ArNavigationViewController.swift in Sources */,
+				00C960E92119A29900D57E7D /* LoginView.swift in Sources */,
+				00F71B2F210E10C60022B7E8 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		00F71B3B210E10C70022B7E8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00F71B44210E10C70022B7E8 /* encashment_mobileTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		00F71B46210E10C70022B7E8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00F71B4F210E10C70022B7E8 /* encashment_mobileUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		00F71B41210E10C70022B7E8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 00F71B2A210E10C60022B7E8 /* encashment-mobile */;
+			targetProxy = 00F71B40210E10C70022B7E8 /* PBXContainerItemProxy */;
+		};
+		00F71B4C210E10C70022B7E8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 00F71B2A210E10C60022B7E8 /* encashment-mobile */;
+			targetProxy = 00F71B4B210E10C70022B7E8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		00F71B37210E10C70022B7E8 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				00F71B38210E10C70022B7E8 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		00F71B51210E10C70022B7E8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		00F71B52210E10C70022B7E8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		00F71B54210E10C70022B7E8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8W6X5BY7MK;
+				INFOPLIST_FILE = "encashment-mobile/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "ymagin.encashment-mobile";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "encashment-mobile/ObjC/encashment-mobile-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		00F71B55210E10C70022B7E8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8W6X5BY7MK;
+				INFOPLIST_FILE = "encashment-mobile/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "ymagin.encashment-mobile";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "encashment-mobile/ObjC/encashment-mobile-Bridging-Header.h";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		00F71B57210E10C70022B7E8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8W6X5BY7MK;
+				INFOPLIST_FILE = "encashment-mobileTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "ymagin.encashment-mobileTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/encashment-mobile.app/encashment-mobile";
+			};
+			name = Debug;
+		};
+		00F71B58210E10C70022B7E8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8W6X5BY7MK;
+				INFOPLIST_FILE = "encashment-mobileTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "ymagin.encashment-mobileTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/encashment-mobile.app/encashment-mobile";
+			};
+			name = Release;
+		};
+		00F71B5A210E10C70022B7E8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8W6X5BY7MK;
+				INFOPLIST_FILE = "encashment-mobileUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "ymagin.encashment-mobileUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "encashment-mobile";
+			};
+			name = Debug;
+		};
+		00F71B5B210E10C70022B7E8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8W6X5BY7MK;
+				INFOPLIST_FILE = "encashment-mobileUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "ymagin.encashment-mobileUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "encashment-mobile";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		00F71B26210E10C60022B7E8 /* Build configuration list for PBXProject "encashment-mobile" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				00F71B51210E10C70022B7E8 /* Debug */,
+				00F71B52210E10C70022B7E8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		00F71B53210E10C70022B7E8 /* Build configuration list for PBXNativeTarget "encashment-mobile" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				00F71B54210E10C70022B7E8 /* Debug */,
+				00F71B55210E10C70022B7E8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		00F71B56210E10C70022B7E8 /* Build configuration list for PBXNativeTarget "encashment-mobileTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				00F71B57210E10C70022B7E8 /* Debug */,
+				00F71B58210E10C70022B7E8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		00F71B59210E10C70022B7E8 /* Build configuration list for PBXNativeTarget "encashment-mobileUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				00F71B5A210E10C70022B7E8 /* Debug */,
+				00F71B5B210E10C70022B7E8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 00F71B23210E10C60022B7E8 /* Project object */;
+}
